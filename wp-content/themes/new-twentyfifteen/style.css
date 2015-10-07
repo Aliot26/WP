@@ -1,0 +1,12 @@
+/*
+Theme Name: New museum-core
+Author: Aliot
+Description: New theme Aliot
+Version: 1.1
+Template: museum-core
+*/
+@import url('../museum-core/style.css');
+
+.container{
+	background: green;
+}
