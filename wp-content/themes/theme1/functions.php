@@ -11,3 +11,11 @@ function load_style_script(){
 *loaded scripts and styles
 */
 add_action('wp_enqueue_scripts', 'load_style_script');
+/**
+*add widget
+*/
+register_sidebar(array(
+				'name' => 'MENU',
+				'id' => 'menu_header',
+				'before_widget' => '',
+				'after_widget' => '' ));
