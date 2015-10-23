@@ -10,8 +10,8 @@
 <body>
 <div class = "head-wrapper">
 	<div class = "head">
-		<div class = "logo"><a href = "index.html>"><img src = "images/logo.jpg" alt = ""  /></a></div>
-		<div class = "banner"><img src = "images/728x90.jpg" alt = "" /></div>
+		<div class = "logo"><a href = "index.html>"><img src = "<?php bloginfo('template_url');?>/images//logo.jpg" alt = ""  /></a></div>
+		<div class = "banner"><img src = "<?php bloginfo('template_url');?>/images//728x90.jpg" alt = "" /></div>
 	</div>
 </div>
 <div class = "menu-wrapper">
@@ -25,10 +25,10 @@
 			<li><a href = "#">Contact Me</a></li>
 		</ul>
 		<ul class = "icon-social">
-			<li><a href = "#"><img src = "images/ico-vk.png" alt = "" /></a></li>
-			<li><a href = "#"><img src = "images/ico-youtube.png" alt = "" /></a></li>
-			<li><a href = "#"><img src = "images/ico-facebook.png" alt = "" /></a></li>
-			<li><a href = "#"><img src = "images/ico-twitter.png" alt = "" /></a></li>
+			<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ico-vk.png" alt = "" /></a></li>
+			<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ico-youtube.png" alt = "" /></a></li>
+			<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ico-facebook.png" alt = "" /></a></li>
+			<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ico-twitter.png" alt = "" /></a></li>
 		</ul>
 	</div>
 </div>
@@ -37,18 +37,18 @@
 		<div class = "content">
 		
 		<div id='slideshowHolder'>    
-			<img src="images/img1.jpg" alt='' />            
-			<img src="images/img1.jpg" alt='' />            
-			<img src="images/img1.jpg" alt='' />            
+			<img src="<?php bloginfo('template_url');?>/images//img1.jpg" alt='' />            
+			<img src="<?php bloginfo('template_url');?>/images//img1.jpg" alt='' />            
+			<img src="<?php bloginfo('template_url');?>/images//img1.jpg" alt='' />            
 		</div>
 		
 			<div class = "articles">
 				<div class = "articles-gen-img">
-					<a href = "#"><img src = "images/post-img1.jpg" alt = "" /></a>
+					<a href = "#"><img src = "<?php bloginfo('template_url');?>/images//post-img1.jpg" alt = "" /></a>
 				</div>
 				<div class = "articles-head">
-					<span class = "article-date"><img src = "images/article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
-					<span class = "article-comment"><img src = "images/article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
+					<span class = "article-date"><img src = "<?php bloginfo('template_url');?>/images//article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
+					<span class = "article-comment"><img src = "<?php bloginfo('template_url');?>/images//article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
 					</span>
 				</div>
 				<h2><a href = "#">Thanksgiving greeting card PSD</a></h2>
@@ -57,11 +57,11 @@
 			</div>
 			<div class = "articles">
 				<div class = "articles-gen-img">
-					<a href = "#"><img src = "images/post-img2.jpg" alt = "" /></a>
+					<a href = "#"><img src = "<?php bloginfo('template_url');?>/images//post-img2.jpg" alt = "" /></a>
 				</div>
 				<div class = "articles-head">
-					<span class = "article-date"><img src = "images/article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
-					<span class = "article-comment"><img src = "images/article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
+					<span class = "article-date"><img src = "<?php bloginfo('template_url');?>/images//article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
+					<span class = "article-comment"><img src = "<?php bloginfo('template_url');?>/images//article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
 					</span>
 				</div>
 				<h2><a href = "#">Vintage business card PSD (front & back)</a></h2>
@@ -70,11 +70,11 @@
 			</div>
 						<div class = "articles">
 				<div class = "articles-gen-img">
-					<a href = "#"><img src = "images/post-img3.jpg" alt = "" /></a>
+					<a href = "#"><img src = "<?php bloginfo('template_url');?>/images//post-img3.jpg" alt = "" /></a>
 				</div>
 				<div class = "articles-head">
-					<span class = "article-date"><img src = "images/article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
-					<span class = "article-comment"><img src = "images/article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
+					<span class = "article-date"><img src = "<?php bloginfo('template_url');?>/images//article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
+					<span class = "article-comment"><img src = "<?php bloginfo('template_url');?>/images//article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
 					</span>
 				</div>
 				<h2><a href = "#">Request a quote form PSD in 3 colors</a></h2>
@@ -83,11 +83,11 @@
 			</div>
 						<div class = "articles">
 				<div class = "articles-gen-img">
-					<a href = "#"><img src = "images/post-img4.jpg" alt = "" /></a>
+					<a href = "#"><img src = "<?php bloginfo('template_url');?>/images//post-img4.jpg" alt = "" /></a>
 				</div>
 				<div class = "articles-head">
-					<span class = "article-date"><img src = "images/article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
-					<span class = "article-comment"><img src = "images/article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
+					<span class = "article-date"><img src = "<?php bloginfo('template_url');?>/images//article-author.jpg" alt = "" /><span>Admin</span> - Nov 28th, 2010</span>
+					<span class = "article-comment"><img src = "<?php bloginfo('template_url');?>/images//article-comment.jpg" alt = "" /><a href = "#">10 Comments</a>
 					</span>
 				</div>
 				<h2><a href = "#">PSD book template & icons</a></h2>
@@ -109,16 +109,16 @@
 				<div class = "search-main">
 					<form action = "" method = "get">
 						<input class = "search-txt" type = "text" name = "search" value = "Поиск" onfocus = "if(this.value=='Поиск')this.value=''" onblur="if(this.value=='')this.value='Поиск'"/>
-						<input type = "image" src = "images/search-btn.jpg" />
+						<input type = "image" src = "<?php bloginfo('template_url');?>/images//search-btn.jpg" />
 					</form>
 				</div> 
 			</div>
 			<div class = "sidebar-widget">
 				<ul class = "ads-main">
-					<li><a href = "#"><img src = "images/ads1.jpg" alt = "" /></a></li>
-					<li><a href = "#"><img src = "images/ads2.jpg" alt = "" /></a></li>
-					<li><a href = "#"><img src = "images/ads3.jpg" alt = "" /></a></li>
-					<li><a href = "#"><img src = "images/ads4.jpg" alt = "" /></a></li>
+					<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ads1.jpg" alt = "" /></a></li>
+					<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ads2.jpg" alt = "" /></a></li>
+					<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ads3.jpg" alt = "" /></a></li>
+					<li><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//ads4.jpg" alt = "" /></a></li>
 				</ul>
 			</div>
 			<div class = "sidebar-widget">
@@ -152,34 +152,34 @@
 				<h3>Latest Posts</h3>
 				<div class = "post">
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">Request a quote form PSD in 3 colors</a>
 					</p>
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">Thanksgiving greeting card PSD</a>
 					</p>
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">Vintage business card PSD(front&back)</a>
 					</p>
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">Free xHTML/CSS website template</a>
 					</p>
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">fruit illustration, fresh lemon PSD</a>
 					</p>
 					<p class = "latest-post">
-						<img src = "images/latest-post1.jpg" alt = "" />
+						<img src = "<?php bloginfo('template_url');?>/images//latest-post1.jpg" alt = "" />
 						<a href = "#">Wooden speakers PSD & icons</a>
 					</p>
 				</div>
 			</div>
 			<div class = "sidebar-widget">
 				<div class = "facebook">
-					<img src = "images/facebook.jpg" alt = "" />
+					<img src = "<?php bloginfo('template_url');?>/images//facebook.jpg" alt = "" />
 				</div>
 			</div>
 		</div>
