@@ -2,12 +2,7 @@
 <div class = "content-wrapper">
 	<div class = "content-main">
 		<div class = "content">
-		
-		<div id='slideshowHolder'>    
-			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
-			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
-			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
-		</div>
+
 <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 			<div class = "articles">
 				<div class = "articles-gen-img">
@@ -28,6 +23,8 @@
 				<p><a href = "<?php the_permalink() ;?>">Read More</a></p>
 			</div>
 <?php endwhile; ?>
+<?php else: ?>
+<p>По Вашему запросу ничего не найдено</p>
 <?php endif; ?>
 
 
