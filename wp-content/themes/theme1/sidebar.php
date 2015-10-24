@@ -9,7 +9,9 @@
 			</div>
 			
 <?php if(!dynamic_sidebar('sidebar')): ?>
-<div class = "sidebar-widget"><h3>sidebar's widgets</h3></div>
+<div class = "sidebar-widget">
+	<h3>sidebar's widgets</h3>
+</div>
 <?php endif; ?>
 	
 			<div class = "sidebar-widget">
