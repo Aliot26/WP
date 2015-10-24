@@ -32,6 +32,8 @@
 
 
 			<div class = "pager">
+<?php posts_nav_link(); ?>
+<!--
 				<a href = "#">1</a>
 				<a href = "#">2</a>
 				<a href = "#">3</a>
@@ -39,6 +41,7 @@
 				<span>of</span>
 				<a href = "#">75</a>
 				<a href = "#" class = "prev-next">Next</a>
+				-->
 			</div>
 		</div>
 		<?php get_sidebar() ;?>

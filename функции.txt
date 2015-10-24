@@ -1,4 +1,4 @@
-/*   
+﻿/*   
 Theme Name: Rose
 Theme URI: домашняя-страница-темы
 Description: краткое-описание-темы
@@ -48,8 +48,12 @@ the_title( $before, $after, $echo ) - выводит на экран или во
 the_excerpt() - выводит отрывок (цитату) поста, со вставкой в конец [...]
 the_content( $more_link_text, $strip_teaser ) - выводит контент текущего поста
 comments_template( $file, $separate_comments ) - подгружает файл шаблона комментариев
+
+posts_nav_link('sep','prelabel','nextlabel') - Выводит ссылки на предыдущую и следующую страницы (посты/категории). Может пригодится для того, чтобы снабдить архивы ссылками навигации.Чтобы получить ссылки на предыдущий/следующий посты в отдельности используйте функции: next_post_link() и previous_post_link().
+
 previous_post_link($format, $link, $in_same_cat = false, $excluded_categories = '') - выводит ссылку на предыдущий пост
 next_post_link($format, $link, $in_same_cat, $excluded_categories) - выводит ссылку на следующий пост
+
 get_header( $name ) - подключает файл шаблона header.php
 get_sidebar( $name ) - подключает файл шаблона sidebar.php
 get_footer( $name ) - подключает файл шаблона footer.php
