@@ -26,3 +26,22 @@ register_sidebar(array(
 				'id' => 'menu_header',
 				'before_widget' => '',
 				'after_widget' => '' ));
+				
+register_sidebar( array(
+		'name' => 'Sidebar',
+		'id' => 'sidebar',
+		'before_widget' => '<div class = "sidebar-widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'));
+		
+/*
+		'description' => '',
+		'class' => '',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget' => "</li>\n",
+		'before_title' => '<h2 class="widgettitle">',
+		'after_title' => "</h2>\n",
+	) );
+	
+*/
