@@ -32,16 +32,7 @@
 
 
 			<div class = "pager">
-<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
-<!--
-				<a href = "#">1</a>
-				<a href = "#">2</a>
-				<a href = "#">3</a>
-				<a href = "#">4</a>
-				<span>of</span>
-				<a href = "#">75</a>
-				<a href = "#" class = "prev-next">Next</a>
-				-->
+				<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 			</div>
 		</div>
 		<?php get_sidebar() ;?>
