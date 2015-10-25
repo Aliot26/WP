@@ -209,7 +209,7 @@ body{
 				color:#eb4900;				
 			}
 .footer-copy{
-	width:960px; margin:0 auto; overflow:hidden; padding:20px 15px; font-size:12px; color:#3373737;
+	width:960px; margin:0 auto; overflow:hidden; padding:20px 15px; font-size:12px; color:#373737;
 }
 	.footer-copy a{
 		color: #eb4900;
@@ -229,4 +229,10 @@ body{
 }
 .footer-info li{
 	float:none;
+}
+.next.page-numbers{
+	color: #eb4900;
+}
+.page-numbers.current{
+	color: #eb4900;
 }

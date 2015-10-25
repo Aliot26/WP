@@ -32,7 +32,7 @@
 
 
 			<div class = "pager">
-<?php posts_nav_link(); ?>
+<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 <!--
 				<a href = "#">1</a>
 				<a href = "#">2</a>
