@@ -12,3 +12,18 @@
 -----------------Темы---------------
 wp-content/themes/ - сюда распаковать архив с темой
 - или - создать папку, в которую загрузить свою вёрстку.
+
+Что менять в wp-config.php
+
+/** The name of the database for WordPress */
+define('DB_NAME', 'explorin_wplift');
+ 
+/** MySQL database username */
+define('DB_USER', 'explorin_uzzer');
+ 
+/** MySQL database password */
+define('DB_PASSWORD', '?0aAsMOcJG_m');
+ 
+/** Defining WP_HOME and WP_SITEURL */
+define('WP_HOME', 'http://yoursitename.com/');
+define('WP_SITEURL', 'http://yoursitename.com/');

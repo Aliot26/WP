@@ -3,10 +3,17 @@
 	<div class = "content-main">
 		<div class = "content">
 		
-		<div id='slideshowHolder'>    
+		<div id='slideshowHolder'>  
+<?php $slider = new WP_Query(array('post_type' => 'slider', 'order' =>ASC));?>	
+<?php if ($slider->have_posts()) :  while ($slider->have_posts()) : $slider->the_post(); ?>	
+	<?php the_post_thumbnail('full'); ?>
+<?php endwhile; ?>
+<?php else: ?>
+	<p>Место для слайдера</p>
+<?php endif; ?>
+<!--			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
 			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
-			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
-			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' />            
+			<img src="<?php bloginfo('template_url');?>/images/img1.jpg" alt='' /> -->           
 		</div>
 <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
 			<div class = "articles">
@@ -29,8 +36,6 @@
 			</div>
 <?php endwhile; ?>
 <?php endif; ?>
-
-
 			<div class = "pager">
 				<?php if (function_exists('wp_corenavi')) wp_corenavi(); ?>
 			</div>

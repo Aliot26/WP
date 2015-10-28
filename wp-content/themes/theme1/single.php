@@ -18,6 +18,8 @@
 			<div class = "pager">
 			<?php previous_post_link('<span></span> %link'); next_post_link('<span></span> %link');?>
 			</div>
+			
+			<?php comments_template(); ?>
 		</div>
 		<?php get_sidebar() ;?>
 	</div>
