@@ -14,6 +14,24 @@ Version: 1.0
 
 Там же в корне размещаем screenshot.png или jpg. Создаем скриншотом экрана страницы вёрстки (разрешение 600x450px).
  
+Меняем в index.php 
+<link rel = "stylesheet" type = "text/css"; href = "<?php bloginfo('stylesheet_url'); ?>" />
+
+Подключаем прочие сss и js файлы: типа
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/elastislide.css" />
+
+Подключаем рисунки множественной заменой:
+images/ на <?php bloginfo('template_url');?>/images/
+
+Создаем файл header.php, переносим в него хедер и подключаем функцией <?php get_header();?>
+
+Создаем файл footer.php, переносим в него футер и подключаем функцией <?php get_footer();?>
+
+В header.php перед закрывающим тегом </head> вызовем функцию <? wp_head();?>
+
+В footer.php перед закрывающим тегом </body> вызовем функцию <? wp_footer();?>
+
+
 Натяжка вёрстки на WP:
 1. Подключение хедера вызовом функции :
 	<? wp_head();?>
