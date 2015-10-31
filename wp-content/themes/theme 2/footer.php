@@ -18,5 +18,6 @@
 	$( '#carousel' ).elastislide();
 												
 </script>
+<?php wp_footer();?>
 </body>
 </html>

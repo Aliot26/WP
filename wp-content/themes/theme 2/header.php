@@ -29,17 +29,24 @@
   </style>
 <![endif]-->
 <title>Fashion Photographer</title>
+<?php wp_head();?>
 </head>
 <body>
 <div class = "karkas">
 	<div class = "header">
 		<a href ="/"><img src = "<?php bloginfo('template_url');?>/images/logo.png" class = "logo" alt = "Fashion Photographer" /></a>
-		<ul class = "menu">
+<?php wp_nav_menu( array(
+    'theme_location'  => 'menu',
+    'menu'            => '', 
+    'container'       => ''
+) );?>
+		
+		<!--<ul class = "menu">
 			<li><a href="/" class="active">HOME</a></li>
 			<li><a href="about.html">ABOUT ME</a></li>
 			<li><a href="portfolio.html">PORTFOLIO</a></li>
 			<li><a href="portfolio1.html">PORTFOLIO-GALLERY</a></li>
 			<li><a href="exhibition.html">EXHIBITIONS</a></li>
 			<li><a href="contact.html">CONTACT ME</a></li>
-		</ul>
+		</ul>-->
 	</div>
