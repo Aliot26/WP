@@ -1,7 +1,13 @@
 <?php get_header();?>
 	<div class = "content-main">
 		<!-- Elastislide Carousel -->
-		<ul id="carousel" class="elastislide-list">
+		
+<?php if(!dynamic_sidebar('slider_index')):?>
+	<ul id="carousel" class="elastislide-list">
+		<li>For Slider</li>
+	</ul>
+<?php endif;?>
+		<!--<ul id="carousel" class="elastislide-list">
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel1.png" alt="image01" /></a></li>
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel2.png" alt="image02" /></a></li>
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel3.png" alt="image03" /></a></li>
@@ -18,7 +24,7 @@
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel2.png" alt="image02" /></a></li>
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel3.png" alt="image03" /></a></li>
 			<li><a href="#"><img src="<?php bloginfo('template_url');?>/images/small/karusel4.png" alt="image04" /></a></li>			
-		</ul>
+		</ul>-->
 		<!-- End Elastislide Carousel -->
 		<div class = "content-main-block">
 			<div>
