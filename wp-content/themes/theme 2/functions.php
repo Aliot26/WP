@@ -14,6 +14,16 @@ register_sidebar(array(
         'after_widget' => ''        
     ));
 /**
+*	footer
+**/	
+register_sidebar(array(
+        'name' => 'Footer',
+        'id' => 'footer', 
+		'description' => 'Добавьте ссылки на соцсети через виджет Текст',
+        'before_widget' => '',
+        'after_widget' => ''        
+    ));
+/**
 *	thumbnails
 **/	
 add_theme_support('post-thumbnails');

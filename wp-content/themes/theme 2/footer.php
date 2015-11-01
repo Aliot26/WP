@@ -5,8 +5,9 @@
 			<p>copyright 2015 <a href = "#">www.yoururl.com</a></p>
 		</div>
 		<div class = "footer-right">
-			<a href = "/"><img src = "<?php bloginfo('template_url');?>/images/twitter.jpg" alt = "" /></a>		
-			<a href = "/"><img src = "<?php bloginfo('template_url');?>/images/facebook.jpg" alt = "" /></a>		
+<?php if(!dynamic_sidebar('footer')):?>
+	
+<?php endif;?>					
 		</div>
 	</div>
 </div>
