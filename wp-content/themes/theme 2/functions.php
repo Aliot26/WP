@@ -27,6 +27,7 @@ register_sidebar(array(
 *	thumbnails
 **/	
 add_theme_support('post-thumbnails');
+add_image_size( 'spec_thumb', 270, 115, true );
 
 /**
 *	social_icon
