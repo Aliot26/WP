@@ -20,6 +20,12 @@
 <?php else: ?>
 <!-- no posts found -->
 <?php endif; ?>
+<div class="clear"></div>
+<?php 
+the_posts_pagination( array(
+    'screen_reader_text' => '&nbsp;'
+) ); 
+?>
 		</div>
 <?php get_sidebar(); ?>		
 	</div>	

@@ -194,3 +194,12 @@ img.alignleft {
 	margin: 7px 24px 7px 0;
 	float: left;
 }
+.clear{
+	clear:both;
+}
+h2.screen-reader-text{
+	border-bottom: none!important;
+}
+.fon-single{
+	background:#000;
+}

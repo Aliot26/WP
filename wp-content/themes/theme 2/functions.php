@@ -28,7 +28,7 @@ register_sidebar(array(
 **/	
 add_theme_support('post-thumbnails');
 add_image_size( 'spec_thumb', 270, 115, true );
-
+add_theme_support( 'custom-background' );
 /**
 *	social_icon
 **/	
@@ -65,5 +65,6 @@ function icon_posts(){
   register_post_type('icon',$args);
 }
 add_action('init', 'icon_posts');
+
 
 ?>
