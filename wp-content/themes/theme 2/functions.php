@@ -66,5 +66,26 @@ function icon_posts(){
 }
 add_action('init', 'icon_posts');
 
+/**
+*	shortcode_gallery
+**/	
+function theme2_gallery($attr, $text=''){
+	// получить массив ID картинок
+	$img_src = explode(',', $attr['ids']);
+	$return = '<ul id="slide_2" class="slidik">';
+	foreach($img_src as $item){
+		$image_url =  wp_get_attachment_image( $item, 'full');
+		//delete width and height
+		
+		$return .= '<li>'.$image_url.'</li>'; 
+	}
+	$return .= '<a data-slidik="slide_2" class="next" href="#">Next</a>
+			<a data-slidik="slide_2" class="prev" href="#">Prev</a>
+			<div class="captionWrap"><div data-slidik="slide_2" class="caption"></div></div>
+			<div class="portfolio-close"><a href="portfolio.html"></a></div>			
+		</ul>';
+	echo $return; 
+}
+add_shortcode('shortcode_gallery', 'theme2_gallery');
 
 ?>
