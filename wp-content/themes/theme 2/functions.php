@@ -72,12 +72,22 @@ add_action('init', 'icon_posts');
 function theme2_gallery($attr, $text=''){
 	// получить массив ID картинок
 	$img_src = explode(',', $attr['ids']);
+	// шаблон удаления атрибутов width/height
+	$pattern = '#(width|height)="\d+"#';
 	$return = '<ul id="slide_2" class="slidik">';
+	//счетчик
+	$i = 1;
+	
 	foreach($img_src as $item){
 		$image_url =  wp_get_attachment_image( $item, 'full');
 		//delete width and height
-		
+		$image_url = preg_replace($pattern, "", $image_url);
+		//формируем вывод		
+		if($i == 1){
+			$return .= '<li class="show">'.$image_url.'</li>';
+		}else
 		$return .= '<li>'.$image_url.'</li>'; 
+		$i++;
 	}
 	$return .= '<a data-slidik="slide_2" class="next" href="#">Next</a>
 			<a data-slidik="slide_2" class="prev" href="#">Prev</a>

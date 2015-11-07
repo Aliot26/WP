@@ -83,7 +83,7 @@
 	z-index:6;
 }
 	.portfolio-close a{
-		background:url(/images/close.png)no-repeat 0 0 ;
+		background:url(../images/close.png)no-repeat 0 0 ;
 		width:37px; 
 		height:37px;
 		display:block;
