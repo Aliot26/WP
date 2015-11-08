@@ -79,7 +79,7 @@ function theme2_gallery($attr, $text=''){
 	$i = 1;
 	
 	foreach($img_src as $item){
-		$image_url =  wp_get_attachment_image( $item, 'full');
+		$image_url =  wp_get_attachment_image( $item, 'full');		
 		//delete width and height
 		$image_url = preg_replace($pattern, "", $image_url);
 		//формируем вывод		
