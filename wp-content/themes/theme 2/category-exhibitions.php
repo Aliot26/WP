@@ -13,9 +13,21 @@
     <div>
 		<a href = "<?php the_permalink();?>"><?php the_post_thumbnail() ;?></a>
 		<h2><a href = "<?php the_permalink();?>"><?php the_title(); ?></a></h2>
-		<p class = "ex-home">King’s Museum, Kensington, London</p>
-		<p class = "ex-note">Tues 26th April 2015 - Sat 30th April 2015<br>8am to 9pm with free refreshments.</p>
-		<p class = "ex-buy">Buy tickets from <a href = "#">TicketMaster</a></p>
+		
+		<?php $custom_fields = get_post_custom(get_the_ID());?>
+		
+		<!--- place, date, ticket -->
+		<?php  if($custom_fields['place'][0]):?>
+			<p class = "ex-home"><?php echo $custom_fields['place'][0];?></p>
+		<?php endif; ?>
+		<?php  if($custom_fields['date'][0]):?>
+			<p class = "ex-note"><?php echo $custom_fields['date'][0];?></p>
+		<?php endif; ?>
+		<?php  if($custom_fields['ticket'][0]):?>
+			<p class = "ex-buy"><?php echo $custom_fields['ticket'][0];?></p>
+		<?php endif; ?>
+		<!--- place, date, ticket -->		
+		
 		<?php the_excerpt();?>		
 		<p><a href = "<?php the_permalink();?>" class = "readmore">buy tickets</a></p>
 	</div>   
