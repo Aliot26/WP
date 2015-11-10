@@ -9,6 +9,7 @@
 		<!-- End Elastislide Carousel -->	
 		
 		<div class = "content-main-block">
+<?php $i = 1; ?>
 <?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
     <div>
 		<a href = "<?php the_permalink();?>"><?php the_post_thumbnail() ;?></a>
@@ -30,7 +31,13 @@
 		
 		<?php the_excerpt();?>		
 		<p><a href = "<?php the_permalink();?>" class = "readmore">buy tickets</a></p>
-	</div>   
+	</div> 
+<?php if($i==3){
+	echo "<div class='clear'></div>";
+	$i = 0;
+}
+$i++;
+?>	
 <?php endwhile; ?>
 <?php else: ?>
 <?php endif; ?>

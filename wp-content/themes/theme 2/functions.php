@@ -1,8 +1,21 @@
 <?php
 /**
+*load scripts and styles
+*/
+function load_style_script(){
+	wp_enqueue_script('jquery_my', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');	
+}
+
+/**
+*loaded scripts and styles
+*/
+add_action('wp_enqueue_scripts', 'load_style_script');
+
+/**
 *	menu
 **/
 register_nav_menu('menu', 'Primary Menu');
+
 /**
 *	slider
 **/
@@ -70,6 +83,7 @@ add_action('init', 'icon_posts');
 *	shortcode_gallery
 **/	
 function theme2_gallery($attr, $text=''){
+
 	// получить массив ID картинок
 	$img_src = explode(',', $attr['ids']);
 	// шаблон удаления атрибутов width/height

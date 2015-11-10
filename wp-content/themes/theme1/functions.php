@@ -13,6 +13,7 @@ function load_style_script(){
 */
 add_action('wp_enqueue_scripts', 'load_style_script');
 
+
 /*
 **thumbnail support
 */
