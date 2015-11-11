@@ -27,14 +27,31 @@ function my_more_options(){
 	//создать поле опции
 	// $id, $title, $callback, $page, $section, $args 
 	add_settings_field(
-		'phone',//$id
-		'Телефон',//$title
-		'display_phone',//$callback
-		'general'//$page
+		'phone',//$id название опции
+		'Телефон',//$title заголовок поля
+		'display_phone',//$callback 
+		'general'//$page страница в которую добавляется поле
 	);
 	//регистрирует новую опцию и callback функцию(функцию обратного вызова) для обработки значения опции при ее сохранении в БД
 	// $option_group, $option_name, $sanitize_callback
-	register_setting();
+	register_setting(
+		'general',// $option_group название группы, к которой будет принадлежать опция. Это название должно совпадать с названием группы в add_settings_field
+		'my_phone' // $option_name название опции, которая будет сохраняться в БД
+	);
+}
+add_action('admin_init', 'my_more_options');
+function display_phone(){
+	echo "<input class='regular-text code' name='my_phone' type='text' value='". esc_attr(get_option('my_phone')) ."'>";
 }
 
+
+/**
+*add widget
+*/
+register_sidebar(array(
+				'name' => 'Иконки в header',
+				'id' => 'icons_header',
+				'description' => 'Используйте виджет Текст для добавления HTML кода иконок',
+				'before_widget' => '',				
+				'after_widget' => '' ));
 ?>

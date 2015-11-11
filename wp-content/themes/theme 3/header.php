@@ -9,16 +9,19 @@
 	<div class = "header">
 		<a href = "#"><img class = "logo" src = "<?php bloginfo('template_url');?>/images/logo2.png" alt = "" /></a>
 		<p class = "head-contact">
-			<img src = "<?php bloginfo('template_url');?>/images/mail.jpg" alt = "" /><a href = "mailto:<?php bloginfo('admin_email');?>"><?php bloginfo('admin_email');?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "<?php bloginfo('template_url');?>/images/phone.png" alt = "" style = "margin-bottom: -3px"; /> 020 72046 404
+			<img src = "<?php bloginfo('template_url');?>/images/mail.jpg" alt = "" /><a href = "mailto:<?php bloginfo('admin_email');?>"><?php bloginfo('admin_email');?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src = "<?php bloginfo('template_url');?>/images/phone.png" alt = "" style = "margin-bottom: -3px"; /><?php echo get_option('my_phone');?>
 		</p>
 		<div class = "head-social">
-			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social1.jpg" alt = "" /></a>
+<?php if(!dynamic_sidebar('icons_header')):?>
+	Место для иконок
+<?php endif;?>
+			<!--<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social1.jpg" alt = "" /></a>
 			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social2.jpg" alt = "" /></a>
 			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social3.jpg" alt = "" /></a>
 			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social4.jpg" alt = "" /></a>
 			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social5.jpg" alt = "" /></a>
 			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social6.jpg" alt = "" /></a>
-			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social7.jpg" alt = "" /></a>
+			<a href = "#"><img src = "<?php bloginfo('template_url');?>/images/social7.jpg" alt = "" /></a>-->
 		</div>	
 		<div class = "menu-block">		
 			<ul>                                                                      
