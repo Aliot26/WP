@@ -20,5 +20,21 @@ function load_style_script(){
 */
 add_action('wp_enqueue_scripts', 'load_style_script');
 
+/**
+*options
+**/
+function my_more_options(){
+	//создать поле опции
+	// $id, $title, $callback, $page, $section, $args 
+	add_settings_field(
+		'phone',//$id
+		'Телефон',//$title
+		'display_phone',//$callback
+		'general'//$page
+	);
+	//регистрирует новую опцию и callback функцию(функцию обратного вызова) для обработки значения опции при ее сохранении в БД
+	// $option_group, $option_name, $sanitize_callback
+	register_setting();
+}
 
 ?>
