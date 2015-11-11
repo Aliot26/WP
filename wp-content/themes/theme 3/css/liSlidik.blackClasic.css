@@ -1,0 +1,107 @@
+#slide_2 {margin:0 0 0 0}
+#slide_2 .captionWrap {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:#000;
+	z-index:4;
+	opacity:0.5
+}
+#slide_2 .captionWrap:hover {
+	opacity:1
+}
+#slide_2 .caption {
+	padding:10px 20px;
+	color:#fff;
+	font:12px/1.2em Arial, Helvetica, sans-serif;
+}
+#slide_2 .dotted {
+	width:100%; 
+	position:absolute; 
+	bottom:15px; 
+	left:0;
+	z-index:5;
+	text-align:center;
+}
+#slide_2 .dottedItem {
+	text-indent:99999px;
+	display:inline-block;
+	//display:inline;
+	//zoom:1;
+	vertical-align:top;
+	width:27px;
+	height:27px;	
+	background: url(../images/slider-nav-btn.png)0 0 no-repeat;
+	margin:0 5px;
+}
+#slide_2 .dottedItem.cur {
+	width:27px;
+	height:27px;
+	background: url(../images/slider-nav-btn.png)100% 100% no-repeat;
+}
+#slide_2 .dottedItem:hover {
+	width:27px;
+	height:27px;
+	background: url(../images/slider-nav-btn.png)100% 100% no-repeat;	
+}
+#slide_2 .next{
+	height:59px;
+	width:35px;
+	font-size:0;
+	line-height:0;
+	position:absolute;
+	top:50%;
+	margin-top:-28px;
+	z-index:5;
+	cursor:pointer;
+	background:url(../images/nav-right.png);
+	opacity:0.5
+	
+}
+#slide_2 .prev {
+	font-size:0;
+	line-height:0;
+	height:59px;
+	width:35px;	
+	position:absolute;
+	top:50%;
+	margin-top:-28px;	
+	z-index:5;
+	cursor:pointer;
+	background:url(../images/nav-left.png);
+	opacity:0.5
+}
+#slide_2 .next {
+	right:25px;
+}
+#slide_2 .prev {
+	left:25px;
+	
+}
+#slide_2 .next:hover,
+#slide_2 .prev:hover {
+	opacity:1
+}
+.slide-content{
+	padding:70px 0 0 80px;
+	position:absolute;
+}
+.slide-content h2{
+	font:normal 36px/1.4 "Droid Serif";
+	color:#464646;
+	margin-bottom:10px;
+}
+.slide-content h3{
+	font:normal 22px/1.4 "Droid Serif";
+	color:#d7a229;
+	margin-bottom:15px;
+}
+.slide-content p{
+	font:normal 13px/1.8 "Droid Serif";
+	color:#6d6c72;
+	margin-bottom:40px;
+}
+.slide-content p img{
+	max-width:100%;
+}
