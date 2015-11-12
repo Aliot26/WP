@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class = "slider">
 		<ul id="slide_2" class="slidik">
-        <li class="show">
+       <!-- <li class="show">
 			<div class = "slide-content">
 				<h2>Super Powerful Theme,<br>With High Quality Standards<h2>
 				<h3>Multi-Purpose Business WordPress Theme</h3>
@@ -10,21 +10,10 @@
 			</div>
 			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
 		</li>
-        <li>			
-			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
-		</li>
-        <li>
-			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
-		</li>
-        <li>
-			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
-		</li>
-		<li>
-			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
-		</li>
+       
         <a data-slidik="slide_2" class="next" href="#">Next</a>
         <a data-slidik="slide_2" class="prev" href="#">Prev</a>        
-        <div data-slidik="slide_2" class="dotted"></div>
+        <div data-slidik="slide_2" class="dotted"></div>-->
 		</ul>
 	</div>
 	<div class = "underslider">

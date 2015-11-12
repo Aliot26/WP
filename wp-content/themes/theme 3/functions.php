@@ -76,10 +76,13 @@ function slider_index(){
 	register_post_type('slider', array(
 								'public' => true,
 								'supports' => array('title', 'editor', 'thumbnail'),
+								'menu_position' => 100,
+								'menu_icon' => admin_url() . 'images/media-button-video.gif',
 								'labels' => array(
 								'name' => 'Слайдеры',
 								'all_items' => 'Все слайдеры',
-								'add_new' => 'Новый слайдер'
+								'add_new' => 'Новый слайдер',
+								'add_new_item' => 'Добавить слайдер'
 								)
 	));
 }
