@@ -62,6 +62,25 @@ register_nav_menus(array(
 		'header_menu' => 'Меню в шапке',
 		'footer_menu' => 'Меню в подвале'
 	) );
-				
 
+/**
+*	thumbnails
+**/	
+add_theme_support('post-thumbnails');
+	
+/**
+*main slider
+**/
+add_action('init', 'slider_index');
+function slider_index(){
+	register_post_type('slider', array(
+								'public' => true,
+								'supports' => array('title', 'editor', 'thumbnail'),
+								'labels' => array(
+								'name' => 'Слайдеры',
+								'all_items' => 'Все слайдеры',
+								'add_new' => 'Новый слайдер'
+								)
+	));
+}
 ?>
