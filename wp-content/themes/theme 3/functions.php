@@ -44,7 +44,6 @@ function display_phone(){
 	echo "<input class='regular-text code' name='my_phone' type='text' value='". esc_attr(get_option('my_phone')) ."'>";
 }
 
-
 /**
 *add widget
 */
@@ -53,5 +52,16 @@ register_sidebar(array(
 				'id' => 'icons_header',
 				'description' => 'Используйте виджет Текст для добавления HTML кода иконок',
 				'before_widget' => '',				
-				'after_widget' => '' ));
+				'after_widget' => '' 
+				));
+
+/**
+*	menu
+**/
+register_nav_menus(array(
+		'header_menu' => 'Меню в шапке',
+		'footer_menu' => 'Меню в подвале'
+	) );
+				
+
 ?>

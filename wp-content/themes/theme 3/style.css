@@ -320,6 +320,14 @@ body{
 	.fmenu{
 		float:right;
 	}
+	.fmenu ul li{
+		display:inline;
+		border-right:1px solid #707070;
+	}
+	.fmenu ul li:last-child{
+		display:inline;
+		border:none;
+	}
 		.fmenu a{
 			color:#707070;
 			margin:0 10px;
