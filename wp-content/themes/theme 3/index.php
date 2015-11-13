@@ -3,33 +3,37 @@
 					'order' => 'ASC'); ?>	
 <?php $slider = new WP_Query($args);?>
 <?php if ($slider->have_posts()) : ?>
-
 	<div class = "slider">
 		<ul id="slide_2" class="slidik">
 <?php while ($slider->have_posts()) : $slider->the_post(); ?>
        <li class="show">
 			<div class = "slide-content">
-				<?php the_content() ;?>
-				
+				<?php the_content() ;?>				
 			</div>
 			<?php the_post_thumbnail('full') ;?>
-		</li>
-       
+		</li>       
         <a data-slidik="slide_2" class="next" href="#">Next</a>
         <a data-slidik="slide_2" class="prev" href="#">Prev</a>        
-        <div data-slidik="slide_2" class="dotted"></div>
-	       
+        <div data-slidik="slide_2" class="dotted"></div>	       
 <?php endwhile; ?>
-
 		</ul>
 	</div>
 <?php else : ?>
 <div><h2>Место для слайдера</h2></div>
 <?php endif; ?>
-	<div class = "underslider">
-		<h2>Extended is immensely powerful, flexible and nicely responsive.</h2>
-		<p>You can easily add modules to the page with our Front-end Drag & Drop functionality. Page layouts began to be infinite and you can follow your creativity. The header is very flexible and allow you to upload backgrounds as well as choosing between few header layouts. Creating and updating your theme has never been that easy and it is fun to play with. Take a tour at all the pages and discover what a great and beautiful theme has to offer.</p>
+	
+<?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
+    <div class = "underslider">
+		<h2><?php the_title() ;?></h2>	
+		<?php the_content() ;?>	
 	</div>
+<?php endwhile; ?>
+<?php else: ?>
+<?php endif; ?>
+	<!--
+		Extended is immensely powerful, flexible and nicely responsive.
+		<p>You can easily add modules to the page with our Front-end Drag & Drop functionality. Page layouts began to be infinite and you can follow your creativity. The header is very flexible and allow you to upload backgrounds as well as choosing between few header layouts. Creating and updating your theme has never been that easy and it is fun to play with. Take a tour at all the pages and discover what a great and beautiful theme has to offer.</p>-->
+	
 	<div class="content-main">
 		<div class="four-columns">
 			<div>
