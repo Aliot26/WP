@@ -216,6 +216,10 @@ body{
 				background:#fff;
 				padding:0 15px 0 0;
 			}
+			.four-columns  a{
+			font:normal 16px "Droid Serif";
+			color:#d7a229;
+			}
 		.center-n{
 			text-align:center;
 			font:24px "Droid Serif";
