@@ -1,21 +1,31 @@
 <?php get_header(); ?>
+<?php $args = array('post_type' => 'slider', 					
+					'order' => 'ASC'); ?>	
+<?php $slider = new WP_Query($args);?>
+<?php if ($slider->have_posts()) : ?>
+
 	<div class = "slider">
 		<ul id="slide_2" class="slidik">
-       <!-- <li class="show">
+<?php while ($slider->have_posts()) : $slider->the_post(); ?>
+       <li class="show">
 			<div class = "slide-content">
-				<h2>Super Powerful Theme,<br>With High Quality Standards<h2>
-				<h3>Multi-Purpose Business WordPress Theme</h3>
-				<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id <br>dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, <br>egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
-				<p><a href = "#"><img src = "<?php bloginfo('template_url');?>/images//slider-btn.png" alt="" /></a></p>
+				<?php the_content() ;?>
+				
 			</div>
-			<img alt="" src="<?php bloginfo('template_url');?>/images//slider1.jpg">
+			<?php the_post_thumbnail('full') ;?>
 		</li>
        
         <a data-slidik="slide_2" class="next" href="#">Next</a>
         <a data-slidik="slide_2" class="prev" href="#">Prev</a>        
-        <div data-slidik="slide_2" class="dotted"></div>-->
+        <div data-slidik="slide_2" class="dotted"></div>
+	       
+<?php endwhile; ?>
+
 		</ul>
 	</div>
+<?php else : ?>
+<div><h2>Место для слайдера</h2></div>
+<?php endif; ?>
 	<div class = "underslider">
 		<h2>Extended is immensely powerful, flexible and nicely responsive.</h2>
 		<p>You can easily add modules to the page with our Front-end Drag & Drop functionality. Page layouts began to be infinite and you can follow your creativity. The header is very flexible and allow you to upload backgrounds as well as choosing between few header layouts. Creating and updating your theme has never been that easy and it is fun to play with. Take a tour at all the pages and discover what a great and beautiful theme has to offer.</p>
