@@ -6,7 +6,7 @@
 	<div class = "slider">
 		<ul id="slide_2" class="slidik">
 <?php while ($slider->have_posts()) : $slider->the_post(); ?>
-       <li class="show">
+       <li class="">
 			<div class = "slide-content">
 				<?php the_content() ;?>				
 			</div>
