@@ -19,6 +19,7 @@ add_action('wp_enqueue_scripts', 'load_style_script');
 */
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(180,180);
+
 /**
 *add widget
 */
